@@ -1,0 +1,26 @@
+// placeholder mixin 과 비슷 하지만 placeholder은 인자를 못받는다.  확장성 떨어짐
+%tag-base {
+  // 공통 스타일
+  @include inline-flexbox;
+  @include text-style(12);
+  cursor: pointer;
+  font-weight: 700;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+.tag-red {
+  @extend %tag-base;
+  color: $white;
+  background-color: $red;
+}
+.tag-green {
+  @extend %tag-base;
+  color: $white;
+  background-color: $green;
+}
+.tag-gray {
+  @extend %tag-base;
+  color: $secondary;
+  background-color: $border;
+}
