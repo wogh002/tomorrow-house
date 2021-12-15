@@ -607,6 +607,62 @@ ol {
   letter-spacing: -0.02em;
   height: 55px; }
 
+select,
+input, .form-select {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #fff;
+  border: 1px solid #e0e2e7;
+  border-radius: 4px;
+  appearance: none;
+  transition: background-color 200ms ease-in-out; }
+  select::placeholder,
+  input::placeholder, .form-select::placeholder {
+    color: #b2b3b9; }
+  select:not(:disabled):hover,
+  input:not(:disabled):hover, .form-select:not(:disabled):hover {
+    background-color: #f7f8fa; }
+  select:disabled,
+  input:disabled, .form-select:disabled {
+    cursor: not-allowed;
+    opacity: 0.4; }
+
+.select-group {
+  position: relative; }
+  .select-group.is-active .form-select {
+    border-color: #3da5f5; }
+  .select-group.is-active .ic-caret {
+    border-color: #3da5f5; }
+  .select-group .form-select {
+    padding-right: 40px;
+    text-overflow: ellipsis; }
+  .select-group .ic-caret {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    right: 8px;
+    font-size: 24px;
+    color: #b2b3b9; }
+
+.input-group {
+  position: relative; }
+  .input-group .form-input {
+    padding-left: 40px; }
+  .input-group .ic-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 20px;
+    color: #8c8d96; }
+
 .container {
   width: 100%;
   padding: 0 5px;

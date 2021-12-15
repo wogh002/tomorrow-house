@@ -17,7 +17,7 @@
   color: $white;
   background-color: $blue;
   transition: background-color 200ms ease-in-out;
-  //   disabled 가 아닌 애들을 호버했을 경우
+  //   disabled이 아닌 애들을 호버했을 경우
   &:not(:disabled):hover {
     background-color: $blue-dark;
   }
