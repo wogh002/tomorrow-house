@@ -2,6 +2,7 @@
 @import './constants/typography';
 @import './constants/breakpoints';
 
+@import './base/global';
 @import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
@@ -17,5 +18,10 @@
 @import './modules/prices';
 @import './modules/buttons';
 @import './modules/forms';
+@import './modules/pagination';
+@import './modules/icons';
+
+@import './components/gnb-nav';
 
 @import './layouts/grids';
+@import './layouts/gnb';

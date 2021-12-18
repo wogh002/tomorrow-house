@@ -1,0 +1,58 @@
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+// 모바일에서만 보이게
+.sm-only {
+  @media screen and (min-width: $md-breakpoint) {
+    display: none !important;
+  }
+}
+// 태블릿에서만 보이게
+.md-only {
+  //767미만 display : none
+  @media screen and (max-width: $md-breakpoint - 1) {
+    display: none !important;
+  }
+  //1200 px 이상
+  @media screen and (min-width: $lg-breakpoint) {
+    display: none !important;
+  }
+}
+//데탑에서만 보이게
+.lg-only {
+  //1199 px 미만
+  @media screen and (max-width: $lg-breakpoint - 1) {
+    display: none !important;
+  }
+}
+
+// 모바일에서만 안.보이게
+.sm-hidden {
+  // 767 미만
+  @media screen and (max-width: $md-breakpoint - 1) {
+    display: none !important;
+  }
+}
+
+// 태블릿에서만 안.보이게
+.md-hidden {
+  //768px 이상 1199 px 미만
+  @media screen and (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) {
+    display: none !important;
+  }
+}
+// 데탑에서만 안.보이게
+.lg-hidden {
+  // 1200px 이상
+  @media screen and (min-width: $lg-breakpoint) {
+    display: none !important;
+  }
+}
